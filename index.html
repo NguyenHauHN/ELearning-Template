@@ -8,9 +8,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/elearning.js" type="text/javascript"></script>
 </head>
 <body class="bd">
 <div class="header-page">
@@ -47,21 +51,31 @@
         <div>
             <div class="block-random-content">
                 <div class="block-content-big">
+                    <div class="lazy slider">
+                        <div>
+                            <img src="http://1ask.vn/static/media/banner2.6a62932d.svg">
+                        </div>
+                        <div>
+                            <img src="http://1ask.vn/static/media/banner1.992ed807.svg" >
+                        </div>
+                        <div>
+                            <img src="http://1ask.vn/static/media/banner3.8afb6488.svg">
+                        </div>
+                    </div>
                 </div>
                 <div style="width:15px"></div>
                 <div class="block-content-small">
                     <div style="display:flex; flex-direction:column; flex: 1; cursor: pointer;">
                         <div>
                             <img src="http://1ask.vn/static/media/image-ads1.0dd9b50a.svg" style="width:100%;">
-                            <div style="height: 12px"></div>
+                            <div style="height: 8px"></div>
                         </div>
                         <div>
                             <img src="http://1ask.vn/static/media/image-ads2.4d8159ee.svg" style="width:100%;">
-                            <div style="height: 12px"></div>
+                            <div style="height: 8px"></div>
                         </div>
                         <div>
                             <img src="http://1ask.vn/static/media/image-ads3.f6141ffb.svg" style="width:100%;">
-                            <div style="height: 12px"></div>
                         </div>
                     </div>
                 </div>
@@ -69,5 +83,15 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+</script>
 </body>
 </html>
