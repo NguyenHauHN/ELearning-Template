@@ -195,3 +195,17 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.tittle-gramma{
+    display: flex; 
+    flex : 1; 
+    text-transform: uppercase; 
+    text-align: left; 
+    padding: 12px; color: #fafafa; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+}
+
+.grammar:hover{
+    cursor: pointer;
+}

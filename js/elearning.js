@@ -3,6 +3,6 @@ $(document).on('ready', function() {
       lazyLoad: 'ondemand', // ondemand progressive anticipated
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000
     });
   });
